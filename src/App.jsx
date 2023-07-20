@@ -6,7 +6,7 @@ const App = () => {
   return (
     <>
       <Game />
-      <BackGroundStuff />
+      {/* <BackGroundStuff /> */}
       {/* <Board /> */}
     </>
   );
