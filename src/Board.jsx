@@ -5,9 +5,8 @@ import Game from "./Game";
 const Board = ({ xIsNext, squares, onPlay }) => {
   // const [xIsNext, setXIsNext] = useState(true);
   // const [squares, setSquares] = useState(Array(9).fill(null));
-
   const handleClick = (i) => {
-    if (squares[i] || calculateWinner(squares)) {
+    if (calculateWinner(squares) || squares[i]) {
       return;
     }
     const nextSquares = squares.slice();

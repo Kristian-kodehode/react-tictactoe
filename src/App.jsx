@@ -1,27 +1,12 @@
 // import Board from "./Board";
 import Game from "./Game";
+import BackGroundStuff from "./Background";
 
 const App = () => {
   return (
     <>
-      <section>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
-      </section>
-      <div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-        <div className="wave"></div>
-      </div>
       <Game />
+      <BackGroundStuff />
       {/* <Board /> */}
     </>
   );
