@@ -6,8 +6,7 @@
 
 body {
   font-family: sans-serif;
-  /* margin: 20px; */
-  /* padding: 0; */
+  background: linear-gradient(to right, blue, yellow);
 }
 
 h1 {
@@ -60,8 +59,9 @@ body {
 }
 
 .square {
-  background: #fff;
-  border: 1px solid #999;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(20px);
+  border: 1px solid #f5f5f5;
   float: left;
   font-size: 32px;
   font-weight: bold;
@@ -72,6 +72,13 @@ body {
   text-align: center;
   height: 80px;
   width: 80px;
+}
+.square:hover {
+  background-color: white;
+}
+button {
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
 }
 
 .board-row:after {
