@@ -114,6 +114,8 @@ button {
 .game {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .game-info {

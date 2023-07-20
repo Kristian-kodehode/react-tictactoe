@@ -1,4 +1,5 @@
-import Board from "./Board";
+// import Board from "./Board";
+import Game from "./Game";
 
 const App = () => {
   return (
@@ -20,8 +21,8 @@ const App = () => {
         <div className="wave"></div>
         <div className="wave"></div>
       </div>
-
-      <Board />
+      <Game />
+      {/* <Board /> */}
     </>
   );
 };
