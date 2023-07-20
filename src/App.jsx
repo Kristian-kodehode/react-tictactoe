@@ -20,6 +20,7 @@ const App = () => {
         <div className="wave"></div>
         <div className="wave"></div>
       </div>
+
       <Board />
     </>
   );
