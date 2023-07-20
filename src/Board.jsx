@@ -45,7 +45,8 @@ const Board = () => {
 
   return (
     <>
-      <div className="status">{status}</div>
+      <h1>TIC TAC TOE</h1>
+
       <div className="platform">
         <div className="board">
           <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -61,6 +62,7 @@ const Board = () => {
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
       </div>
+      <div className="status">{status}</div>
     </>
   );
 };

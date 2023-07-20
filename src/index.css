@@ -11,8 +11,9 @@ body {
 }
 
 h1 {
-  margin-top: 0;
-  font-size: 22px;
+  margin-top: 40px;
+  font-size: 32px;
+  text-align: center;
 }
 
 h2 {
@@ -81,6 +82,7 @@ body {
 
 .status {
   margin-bottom: 10px;
+  text-align: center;
 }
 .game {
   display: flex;
@@ -94,7 +96,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 60vh;
 }
 
 .board {
