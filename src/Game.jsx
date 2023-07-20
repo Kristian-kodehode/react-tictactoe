@@ -6,7 +6,7 @@ const Game = () => {
   const [history, setHistory] = useState([Array(9).fill(null)]);
   const currentSquares = history[history.length - 1];
 
-  const handlePay = () => {
+  const handlePay = (nextSquares) => {
     setHistory([...history, nextSquares]);
     setXIsNext(!xIsNext);
   };
