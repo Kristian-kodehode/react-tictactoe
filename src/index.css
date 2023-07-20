@@ -1,11 +1,13 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
   font-family: sans-serif;
-  margin: 20px;
-  padding: 0;
+  /* margin: 20px; */
+  /* padding: 0; */
 }
 
 h1 {
@@ -67,8 +69,8 @@ body {
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  height: 64px;
-  width: 64px;
+  height: 80px;
+  width: 80px;
 }
 
 .board-row:after {
@@ -87,4 +89,17 @@ body {
 
 .game-info {
   margin-left: 20px;
+}
+.platform {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 80px);
+  grid-template-rows: repeat(3, 80px);
+  gap: 1px;
 }
