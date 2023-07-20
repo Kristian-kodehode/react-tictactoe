@@ -62,7 +62,7 @@ const Board = () => {
           <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
         </div>
       </div>
-      <div className="status">{status}</div>
+      <h2 className="status">{status}</h2>
     </>
   );
 };
