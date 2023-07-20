@@ -88,6 +88,7 @@ ul {
   width: 80px;
   cursor: pointer;
   transition: 0.1s;
+  box-shadow: 1px 1px 6px rgba(18, 88, 239, 0.4);
 }
 .square:hover {
   border: 1px solid white;
