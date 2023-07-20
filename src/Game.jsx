@@ -23,3 +23,13 @@ const Game = () => {
 };
 
 export default Game;
+
+/*
+Showing past moves er neste steg i tutorial.
+
+
+
+
+
+
+*/
