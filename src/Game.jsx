@@ -20,7 +20,7 @@ const Game = () => {
 
   const moves = history.map((squares, move) => {
     let description;
-    description = move > 0 ? `Go to move # ${move}` : `Go to game start`;
+    description = move > 0 ? `Go to move # ${move}` : `Restart Game`;
     return (
       <li key={move}>
         <button onClick={() => jumpTo(move)}>{description}</button>
