@@ -36,7 +36,7 @@ const Board = () => {
         return squares[a];
       }
     }
-    return null;
+    return "";
   }
 
   const winner = calculateWinner(squares);
