@@ -125,6 +125,14 @@ button {
   background-color: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(30px);
   cursor: pointer;
+
+  transition: 0.4s;
+}
+.game-info > button:hover {
+  background-color: rgba(255, 255, 255, 1);
+  color: rgb(60, 187, 206);
+  outline: 1px solid white;
+  outline-offset: 4px;
 }
 .platform {
   display: flex;
