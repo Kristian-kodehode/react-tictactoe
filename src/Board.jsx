@@ -37,8 +37,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
   }
 
   const winner = calculateWinner(squares);
-  let status = "";
-  status = winner ? `Winner: ${winner}` : `Winner: ${winner}`;
+  let status = winner ? `Winner : ${winner}` : `Winner : ${winner}`;
 
   return (
     <>
