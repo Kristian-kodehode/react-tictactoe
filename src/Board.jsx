@@ -40,7 +40,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
     ? winner === "draw"
       ? "It's a draw!"
       : `Winner : ${winner}`
-    : `Players turn : ${currentPlayer}`;
+    : `Your turn, Player : ${currentPlayer}`;
   return (
     <>
       <h1>TIC TAC TOE</h1>
