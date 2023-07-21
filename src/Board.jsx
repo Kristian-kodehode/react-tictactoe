@@ -12,7 +12,7 @@ const Board = ({ xIsNext, squares, onPlay }) => {
     onPlay(nextSquares);
   };
 
-  function calculateWinner() {
+  function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
       [3, 4, 5],
@@ -23,22 +23,24 @@ const Board = ({ xIsNext, squares, onPlay }) => {
       [0, 4, 8],
       [2, 4, 6],
     ];
-    for (let i = 0; i < lines.length; i++) {
-      const [a, b, c] = lines[i];
-      if (
-        squares[a] &&
-        squares[a] === squares[b] &&
-        squares[b] === squares[c]
-      ) {
-        return squares[a];
-      }
-    }
-    return "";
+
+    const winner = lines
+      .filter(
+        ([a, b, c]) =>
+          squares[a] && squares[a] === squares[b] && squares[b] === squares[c]
+      )
+      .map(([a]) => squares[a])[0];
+
+    return winner || (squares.every((square) => square) ? "draw" : "");
   }
 
   const winner = calculateWinner(squares);
-  let status = winner ? `Winner : ${winner}` : `Winner : ${winner}`;
-
+  let currentPlayer = xIsNext ? "X" : "O";
+  let status = winner
+    ? winner === "draw"
+      ? "It's a draw!"
+      : `Winner : ${winner}`
+    : `Players turn : ${currentPlayer}`;
   return (
     <>
       <h1>TIC TAC TOE</h1>
