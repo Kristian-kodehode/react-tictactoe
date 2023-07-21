@@ -1,8 +1,6 @@
-import { useState } from "react";
 import Square from "./Square";
-import BackGroundStuff from "./Background";
 
-const Board = ({ xIsNext, squares, onPlay }) => {
+function Board({ xIsNext, squares, onPlay }) {
   const handleClick = (i) => {
     if (calculateWinner(squares) || squares[i]) {
       return;
@@ -11,7 +9,6 @@ const Board = ({ xIsNext, squares, onPlay }) => {
     nextSquares[i] = xIsNext ? "X" : "O";
     onPlay(nextSquares);
   };
-
   function calculateWinner(squares) {
     const lines = [
       [0, 1, 2],
@@ -23,14 +20,12 @@ const Board = ({ xIsNext, squares, onPlay }) => {
       [0, 4, 8],
       [2, 4, 6],
     ];
-
     const winner = lines
       .filter(
         ([a, b, c]) =>
           squares[a] && squares[a] === squares[b] && squares[b] === squares[c]
       )
       .map(([a]) => squares[a])[0];
-
     return winner || (squares.every((square) => square) ? "draw" : "");
   }
 
@@ -60,9 +55,8 @@ const Board = ({ xIsNext, squares, onPlay }) => {
         </div>
       </div>
       <h2 className="status">{status}</h2>
-      {/* <BackGroundStuff /> */}
     </>
   );
-};
+}
 
 export default Board;
